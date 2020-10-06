@@ -1,0 +1,66 @@
+        <!DOCTYPE html>
+        <meta charset="UTF-8">
+        <script>
+        var nota100, nota50, nota20, nota10, nota5, nota2, nota1;
+        var saque;
+
+        saque = parseInt (prompt("Quanto você deseja sacar?"));
+
+        if (saque >= 1)
+        {
+            nota100 = saque/100;
+            nota100 = parseInt (nota100);
+            saque = saque%100;
+            
+
+            nota50 = saque/50;
+            nota50 = parseInt (nota50);
+            saque = saque%50;
+            
+
+            nota20 = saque/20;
+            nota20 = parseInt (nota20);
+            saque = saque%20;
+            
+
+            nota10 = saque/10;
+            nota10 = parseInt (nota10);
+            saque = saque%10;
+           
+
+            nota5 = saque/5;
+            nota5 = parseInt (nota5);
+            saque = saque%5;
+            
+
+            nota2 = saque/2;
+            nota2 = parseInt (nota2);
+            saque = saque%2;
+
+            nota1 = saque/1;
+            nota1 = parseInt (nota1);
+            saque = saque%1;
+
+            
+                    
+            document.write (`----- SAQUE DISPONÍVEL ----- <BR>`);
+            document.write (`O VALOR DE NOTA 100 é: ${nota100} <br>`);
+            document.write (`O VALOR DE NOTA 50 é: ${nota50} <br>`);
+            document.write (`O VALOR DE NOTA 20 é: ${nota20} <br>`);
+            document.write (`O VALOR DE NOTA 10 é: ${nota10} <br>`);
+            document.write (`O VALOR DE NOTA 5 é: ${nota5} <br>`);
+            document.write (`O VALOR DE NOTA 2 é: ${nota2} <br>`);
+            document.write (`O VALOR DE NOTA 1 é: ${nota1} <br>`);
+            document.write (`----- SAQUE DISPONÍVEL -----`);
+        }
+        else  {
+                document.write (`----- SAQUE INDISPONÍVEL. -----<br> ----- INSIRA UM VALOR MAIOR. -----`);
+    
+            }
+
+        </script>
+
+
+
+
+           

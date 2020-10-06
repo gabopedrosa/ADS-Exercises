@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<script>
+/*Escrever um programa que leia três comprimentos de reta e
+verifique se eles formam um triângulo. 
+Para formar um 
+triângulo, os três lados precisam atender à seguinte
+condição: a soma de quaisquer dois lados deve ser maior
+que o lado restante. 
+
+Depois que for verificado que os lados
+formam um triângulo, o programa deve indicar que tipo de
+triângulo, se equilátero, isósceles ou escaleno.
+(a+b>c E a+c>b E b+c>a)
+*/
+
+var a, b, c;
+a = parseFloat(prompt("Informe o primeiro lado:"));
+b = parseFloat(prompt("Informe o segundo lado:"));
+c = parseFloat(prompt("Informe o terceiro lado:"));
+if (a+b>c && a+c>b && b+c>a)
+	{
+		document.write("Os lados formam um triângulo.<br>");
+		if (a==b && a==c)
+			{
+				document.write("Equilátero!");
+			}
+else	
+			if (a==b || a==c || b==c)
+				{
+					document.write("Isósceles!");
+				}
+			else	
+				{
+					document.write("Escaleno!");
+				}
+	}
+else
+	{
+		document.write("Os lados não formam um triângulo.")
+	}
+</script>

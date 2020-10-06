@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<script>
+ 
+    var qtdFuncionario;
+    var qtdChapas, qtdBarras, fimChapas, fimBarras, fimFuncionario;
+    var valorChapas, valorBarras
+    var valorExcedente;
+            
+        funcionario = parseInt (prompt ('Informe a quantidade de funcionarios.'));
+        qtdChapas = parseInt (prompt('Informe a quantidade de chapas de aço produzidas no ano.'));
+        qtdBarras = parseInt (prompt('Informe a quantidade de barras de alumínio produzidas no ano.'));
+
+        if(qtdChapas > 100000 && qtdBarras > 50000) {
+                fimChapas = (qtdChapas - 100000);
+                fimBarras = (qtdBarras - 50000);
+                valorChapas = (fimChapas * 5);
+                valorBarras = (fimBarras * 2.50);
+                fimFuncionario = (valorChapas+valorBarras) / funcionario;
+
+                
+                document.write (`O valor excedente das Chapas foram: ${fimChapas} <br>`);
+                document.write (`O valor excedente das Barras foram: ${fimBarras} <br>`);
+                document.write (`<h3> R$ ${valorChapas.toFixed(2)} de lucro das Chapas <br>`);
+                document.write (`<h3> R$ ${valorBarras.toFixed(2)} de lucro das Barras`);
+                document.write (`<h2> Cada funcionário receberá um total de: R$${fimFuncionario.toFixed(2)}`); 
+        }
+        else if(qtdChapas > 100000 && qtdBarras <= 50000) {
+                fimChapas = (qtdChapas - 100000);
+                fimChapasMetade = (fimChapas)/2
+                valorChapas = (fimChapasMetade * 5);
+                fimFuncionario = (valorChapas+fimChapasMetade) / funcionario;
+
+                document.write (`O valor excedente das Chapas reduzido pela metade foram: ${fimChapasMetade}`);
+                document.write (`<h3> R$ ${valorChapas.toFixed(2)} de lucro das Chapas.`);
+                document.write (`<h2> Cada funcionário receberá um total de: R${fimFuncionario.toFixed(2)}`);
+        }
+        else if(qtdChapas <= 100000 && qtdBarras > 50000) {
+            alert (`Meta de produção de Barras de Alumínio atingida, porém a meta de produção de Chapas de aço não foi como esperada.
+                    
+Tente novamente próximo ano.`);
+        }
+        else {
+            alert (`A meta não foi alcançada.`);
+        }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</script>

@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<script>
+    var horas = parseInt( prompt('Informe as horas ') );
+    var semanas = parseInt( horas / 168 );
+    horas = ( horas % 168 );
+    var dias = parseInt( horas % 24 );
+    document.write(`Estamos a ${semanas} semanas, ${dias} dias, ${horas} horas sem nenhum acidente. <br>`);
+    document.write(`Parabéns!`);
+
+</script>

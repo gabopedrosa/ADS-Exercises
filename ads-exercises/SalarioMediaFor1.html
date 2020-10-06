@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<br>
+<meta charset="UTF-8">
+<script>
+    var sal, cont, soma, somaFinal;
+        soma = 0;
+        cont = 1;
+        sal = parseFloat(prompt('Informe o salario: '));
+        while ( sal !=0 ) {
+            soma = soma + sal; 
+            cont ++;
+            sal = parseFloat(prompt('Informe o salário: '));
+        }
+
+            sal --;
+            somaFinal = (soma/cont);
+            document.write (`Media salarial: R$ ${somaFinal.toFixed(2)}`);
+
+
+</script>

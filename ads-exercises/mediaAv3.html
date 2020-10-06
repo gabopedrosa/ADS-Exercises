@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<script>
+    var nota1, nota2, nota3;
+    var media1, mediaFinal;
+    document.title = ("Será que passou?");
+    nota1 = parseFloat (prompt("Informe a primeira nota."));
+    nota2 = parseFloat (prompt("Informe a segunda nota."));
+    media1 = (nota1+nota2) / 2;
+        if (media1 >= 4)   {
+            alert ("Parabéns, você passou para a AV3!");
+            nota3 = parseFloat (prompt("Informe a terceira nota."));
+            mediaFinal = (nota1+nota2+nota3) / 3;
+                if (mediaFinal >= 5 && nota3 >= 4) {
+                    alert (`Parabéns, a sua média final foi: ${mediaFinal}`);
+                    alert (`Você está aprovado!`);
+                }
+                else {
+                    document.write ("Reprovado.");
+                }
+        }
+        else {
+            document.write ("Reprovado.");
+        }
+    
+
+
+
+
+
+
+
+
+
+
+</script>

@@ -1,0 +1,17 @@
+<meta charset="UTF-8">
+<script>
+//declaração de variáveis
+//não pode ter acentos ou símbolos
+//não pode começar por números
+var idade, nome;
+var ano = 2020;
+var anodenascimento;
+//entrada de dados
+nome = prompt ("Qual é o seu nome?");
+idade = prompt (nome+", Qual é a sua idade?")
+idade = parseInt(idade); //parseFloat para números reais
+//processamento de dados
+anodenascimento = ano - idade;
+//saída de dados
+document.write ("O ano do nascimento da pessoa é:" +anodenascimento);
+</script>

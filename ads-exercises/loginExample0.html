@@ -1,0 +1,53 @@
+<meta charset="UTF-8">
+<script>
+    var senhaPadrao = ["Bruno", "BRUNO", "bruno"];
+    var senhaDigitada; //undefined
+    var digitouCorretamente;
+
+    do {
+        senhaDigitada = prompt("----- Digite o seu LOGIN -----");
+        
+        if( 
+            senhaPadrao[0] == senhaDigitada || 
+            senhaPadrao[1] == senhaDigitada ||
+            senhaPadrao[2] == senhaDigitada  
+            //senhaDigitada == "bruno" ||       <-caso nao use ARRAY
+            //senhaDigitada == "BRUNO" ||       <-caso nao use ARRAY
+            //senhaDigitada == "BRUNO"          <-caso nao use ARRAY
+        ) {
+            digitouCorretamente = true;
+            alert("LOGIN VÁLIDO!");
+        }
+        else {
+            digitouCorretamente = false;
+            alert("LOGIN INVÁLIDO, TENTE NOVAMENTE.");
+        
+        }
+    }while( !digitouCorretamente );  // ! significa o contrário 
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*Gabriel Araújo Pedrosa
+     GabrielAraujoPedrosa = CamelCase 
+     gabrielAraujoPedrosa  = lowerCamelCase */
+    /**
+    
+    */
+    
+</script>

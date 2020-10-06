@@ -1,0 +1,48 @@
+<meta charset="UTF-8">
+<script>
+    var loginPadrao = 'admin';
+    var loginDigitado;
+    var digitouCorretamenteLogin;
+        do  {    
+        loginDigitado = prompt ( "Digite seu login abaixo." )
+        
+        if( loginPadrao == loginDigitado ) 
+        {
+            digitouCorretamenteLogin = true;
+            alert( "LOGIN VÁLIDO!" );
+        }
+
+        else 
+        {
+            digitouCorretamenteLogin = false;
+            alert( "LOGIN INVÁLIDO, TENTE NOVAMENTE." );
+        }
+            } 
+                while ( !digitouCorretamenteLogin );
+
+    // SENHA 2 DO 2
+    var senhaPadrao = '123';
+    var senhaDigitada;
+    var digitouCorretamenteSenha;
+
+    do {
+        senhaDigitada = prompt ( "Digite sua senha abaixo." )
+
+        if(
+            senhaPadrao == senhaDigitada
+
+        ) {
+            digitouCorretamenteSenha = true;
+            alert( "SENHA VÁLIDA." );
+
+        }
+        else {
+            digitouCorretamenteSenha = false;
+            alert( "SENHA INVÁLIDA." )
+        }
+
+    }
+    while( !digitouCorretamenteSenha );
+
+
+</script>

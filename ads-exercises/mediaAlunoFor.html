@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<script>
+    var media;
+    var total = 0;
+    var cont = 1; 
+    var salario = parseFloat(prompt(`Informe o salario da primeira pessoa`));
+
+        while ( salario > 0 ) {
+            total += salario;
+            salario = parseFloat(prompt(`Informe o salario da proxima pessoa`));
+
+        if ( salario > 0 ) {
+            cont += 1;
+            }
+        }
+        
+        media = total/cont;
+        document.write( `A média salarial foi: ${media.toFixed(2)}`);
+
+
+</script>

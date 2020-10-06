@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<script>
+    let custoFabrica;
+    custoFabrica = parseFloat(prompt('Digite o custo de Fábrica do seu carro.'));
+
+        if(
+            custoFabrica < 12000
+        ) {
+            porcentagemDistribudor = 0.05;
+            custoDistribuidor = custoFabrica * (porcentagemDistribudor);
+            custoCarroFinal = custoFabrica + custoDistribuidor;
+
+        }
+        else if(
+            custoFabrica >= 12000 && custoFabrica <= 25000
+        ) {
+            porcentagemDistribudor = 0.10;
+            impostos = 0.15;
+            custoDistribuidor = custoFabrica * (porcentagemDistribudor + impostos);
+            custoCarroFinal = custoFabrica + custoDistribuidor;
+        }
+        else if(
+            custoFabrica > 25000
+        ) {
+            porcentagemDistribudor = 0.15;
+            impostos = 0.20;
+            custoDistribuidor = custoFabrica * (porcentagemDistribudor + impostos);
+            custoCarroFinal = custoFabrica + custoDistribuidor;
+        }
+        else {
+            alert ('Nenhum valor foi inserido.. tente novamente.')
+        }
+        document.writeln(`<h3> O valor do imposto com a porcentagem do distribuidor acrescentado com o custo de fábrica foi: R$${custoCarroFinal.toFixed(2)}`)
+
+    /* O preço ao consumidor de um carro novo é a soma do custo de fábrica com a porcentagem do distribuidor e dos impostos, ambos aplicados ao custo de fábrica. As porcentagens
+    encontram-se na tabela a seguir. Faça um programa que receba o custo de fábrica de um carro e
+    apresente o preço ao consumidor final.
+    */
+</script>

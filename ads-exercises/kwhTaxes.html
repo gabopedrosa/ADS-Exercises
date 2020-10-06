@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<meta charset = "UTF-8">
+
+<script>
+    var classeConsumidora, tarifa;
+    var consumoEnergia;
+    var valorTotal;
+        do {
+        consumoEnergia = parseFloat (prompt('Informe seu consumo de Energia em KW/h'));
+        classeConsumidora = parseInt (prompt('Informe sua classe Consumidora.'))
+    
+        if( classeConsumidora == 1 ) 
+            {
+        tarifa = consumoEnergia * 1;
+        valorTotal = tarifa + (0.30 * tarifa);
+        document.write('O valor da sua energia foi: ' +valorTotal);
+            }
+        else if( classeConsumidora == 2 ) 
+            {
+        tarifa = consumoEnergia * 0.80;
+        valorTotal = tarifa + (0.30 * tarifa);
+        document.write('O valor da sua energia foi: ' +valorTotal);
+            }
+        else if( classeConsumidora == 3 ) 
+            {
+        tarifa = consumoEnergia * 0.50;
+        valorTotal = tarifa + (0.30 * tarifa);  
+        document.write('O valor da sua energia foi: ' +valorTotal);
+            }
+        else 
+            {
+        alert('Insira o valor de 1 até 3.');
+            }
+        }
+        while(!classeConsumidora)
+    
+    
+    
+</script>

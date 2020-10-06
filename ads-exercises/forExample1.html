@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<script>
+    let n1,n2,m,cont,n;
+    /*  for (start;                 condition;      increment or decrement) {}
+        for starts on 0, 1, 2...;   condition;      increment or decrement to decide how often he repeats) {}
+    */
+
+    for ( cont = 0; cont < 3; cont = cont + 1 ) {
+    nome = prompt('Informe seu nome.');
+    n1 = parseFloat(prompt('Informe a nota1'));
+    n2 = parseFloat(prompt('Informe a nota2'));
+    m = (n1+n2)/2;
+    document.write (`Média do aluno ${nome}, foi: ${m.toFixed(1)} <br>`);
+
+        if(m >= 6) {
+            document.write ('<h3>Aprovado. </h3> <br>');
+        }
+        else {
+            document.write ('<h3>Reprovado. </h3> <br>');
+        }
+}
+</script>

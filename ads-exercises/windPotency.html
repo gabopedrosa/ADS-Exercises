@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<meta charset = "UTF-8">
+<script>
+    var rajadaVento, rajadaVentoMaisViolenta;
+    var casaCicero, casaPratico, casaHeitor;
+    
+    casaCicero = parseFloat (prompt ('Informe a velocidade máxima que sua casa pode suportar, Cícero.'));
+    casaPratico = parseFloat (prompt ('Informe a velocidade máxima que sua casa pode suportar, Pratico.'));
+    casaHeitor = parseFloat (prompt ('Informe a velocidade máxima que sua casa pode suportar, Heitor.'));
+
+        if( casaHeitor > casaPratico && casaHeitor > casaCicero)
+        {
+                document.write (`A casa de Heitor atingiu a maior durabilidade durante uma época de ventos fortes! <br> <br>`);
+                document.write (`A casa de Heitor aguentou uma velocidade do vento de ${casaHeitor} KM/h <br>`);
+        }
+        else if( casaPratico > casaHeitor && casaPratico > casaCicero )
+        {
+                document.write (`A casa de Pratico atingiu a maior durabilidade durante uma época de ventos fortes! <br> <br>`);
+                document.write (`A casa de Pratico aguentou uma velocidade do vento de ${casaPratico} KM/h <br>`);
+        }
+        
+        else if( casaCicero > casaHeitor && casaCicero > casaPratico )
+         {
+                document.write (`A casa de Cicero atingiu a maior durabilidade durante uma época de ventos fortes! <br> <br>`);
+                document.write (`A casa de Cicero aguentou uma velocidade do vento de ${casaCicero} KM/h <br>`);
+                }
+        else {
+            alert (`        Você me informou algum valor igual entre as casas de: 
+                            "CÍCERO"; "PRÁTICO"; "HEITOR";`);
+        }
+    
+        
+    
+</script>

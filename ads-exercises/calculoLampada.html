@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<script>
+    var valorPotencia;
+    var dimensao1, dimensao2, dimensaoTotal;
+            dimensao1 = parseFloat (prompt( 'Digite a primeira dimensão. (m²)' ));
+            dimensao2 = parseFloat (prompt( 'Digite a segunda dimensão. (m²) '));
+            dimensaoTotal = (dimensao1*dimensao2);
+            alert (`O cálculo das duas dimensões é: ${dimensaoTotal} m².`);
+            alert (`Para cada m², deve-se usar 18W de potência.`);
+            valorPotencia = (dimensaoTotal*18);
+            if(dimensaoTotal>=1) {
+                lampadaFinal = valorPotencia / 6;
+                document.write (`<h3> A área total do cômodo foi: ${dimensaoTotal.toFixed(1)}m² </h3>`);
+                document.write (`A potência de iluminação total deverá ser ${valorPotencia.toFixed(0)}W <br>`);
+                document.write (`Deverão ser usadas ${lampadaFinal.toFixed(0)} lâmpadas de 6W.`);
+
+
+            }
+            else {
+                alert (`Algo errado... confira novamente.`);
+            }
+
+        
+</script>

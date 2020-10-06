@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<script>
+    var cont, tAlunos, media, cont2;
+    cont2 = 0;
+    cont = 1;
+    media = 0;
+tAlunos = parseInt(prompt("Quantos alunos existem na turma ?"));
+while ( cont <= tAlunos ) {
+        media = parseInt(prompt("Qual foi a media do aluno "+cont+" ?"));
+        if (media>= 6){
+            cont2++
+        }
+        document.write("A media do aluno "+cont+" foi: "+ media+"<br>");
+            cont++
+    }
+        document.write("No total, tivemos "+cont2+" alunos acima da media.");  
+
+
+
+
+</script>

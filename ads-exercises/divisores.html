@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<script>
+    var N, cont;
+    N = parseInt (prompt('Informe um número: '));
+
+    document.write (`<br> Os divisores exatos de ${N} são : <br>`)
+        for (cont = 1; cont <= N; cont++) {
+            if ( N % cont == 0 ) {
+                document.write (`${cont}<br>`);
+            }
+        }
+
+</script>

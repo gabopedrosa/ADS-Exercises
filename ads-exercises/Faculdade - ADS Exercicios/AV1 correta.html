@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<br>
+<meta charset ="UTF-8">
+
+<script>
+    var horasTrabalhadas;
+    var salarioMin;
+
+        horasTrabalhadas = parseFloat (prompt ("Informe as horas trabalhadas: "));
+        salarioMin = parseFloat  (prompt ("Informe o salario minimo: "));
+
+        valorHorasTrabalhadas = (1/3)*salarioMin;
+    
+    var salarioBruto;
+        salarioBruto = horasTrabalhadas * valorHorasTrabalhadas;
+    var imposto;
+        imposto = 0.06 * salarioBruto
+    var salario
+        salario = (salarioBruto - imposto)
+    
+        document.write ("O valor do seu salario será:  R$ " +salario.toFixed(2) )
+
+    
+
+
+
+
+</script>

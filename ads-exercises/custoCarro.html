@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<meta charset = "UTF-8">
+<script>
+
+    var custoFabrica;
+        custoFabrica = parseFloat (prompt ("Informe o custo de fábrica do carro :"));
+    var percentagemDistrubuidor;
+        percentagemDistrubuidor = 0,28*custoFabrica;
+    var impostos;
+        impostos = 0.45*custoFabrica;
+    var precoCarro;
+        precoCarro = custoFabrica +  percentagemDistrubuidor + impostos;
+
+        document.write ("O preço final deste veículo será: R$ " +precoCarro.toFixed(2));
+
+
+
+
+
+</script>

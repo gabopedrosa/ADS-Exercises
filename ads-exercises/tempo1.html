@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<br>
+<meta charset = "UTF-8">
+
+<script>
+var tempo;
+var hora;
+var minuto;
+var segundo;
+
+
+tempo = prompt ("Informe a duração do tempo em segundos: ")
+hora = tempo/3600; //tempo = 2000, hora = 5,55555;
+tempo = tempo%3600; //tempoinicial = 20000, tempofinal = 2000;
+minuto = tempo/60; //tempo = 2000, minuto = 3,66666;
+segundo = tempo%60; //tempo = 2000, segundo = 20;
+
+document.write ("A duração do evento foi " +parseInt(hora)+" h" +parseInt(minuto)+ " min" +parseInt(segundo)+ " s");
+
+</script>

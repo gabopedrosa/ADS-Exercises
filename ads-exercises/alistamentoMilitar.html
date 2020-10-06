@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<script>
+var sexo = prompt ("Informe o seu sexo em (M/F)");
+if (sexo == "M") {
+var idade = parseInt (prompt ("Informe a sua idade abaixo."));
+
+if (idade >= 18) {
+var nacionalidade = parseInt(prompt ("Informe a sua nacionalidade com 0 para Brasileiro NATO e 1 para OUTROS."));
+var estadoDaNacao = parseInt(prompt ("Informe se o estado da sua nação se encontra em PAZ ou em GUERRA."));
+if (nacionalidade == 0) {
+document.write ("1: Alistamento obrigatório.");
+}
+else {
+document.write ("0: Alistamento não é obrigatório.");
+}
+} 
+else {
+document.write ("0: Alistamento não é obrigatório.");
+}
+} 
+else{
+document.write ("0: Alistamento não é obrigatório.");
+}
+
+</script>

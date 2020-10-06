@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<script>
+
+
+var salarioAtual;
+var novoSalario;
+var aumento;
+
+salarioAtual = parseFloat (prompt('Informe o salário atual.'));
+
+if (salarioAtual <= 300) 
+{
+    aumento = (salarioAtual*0.15);
+    novoSalario = salarioAtual + aumento;
+    alert(`O salário atual será igual a ${novoSalario}`);
+}
+else 
+    if (salarioAtual >= 300 && salarioAtual <= 600) 
+{
+    tarifa2 = (salarioAtual*0.10);
+    novoSalario = salarioAtual + tarifa2;;
+    alert(`O salário atual será igual a ${novoSalario}`);
+}
+else 
+    if (salarioAtual >= 600 && salarioAtual <= 900) 
+{
+    tarifa3 = (salarioAtual*0.05);
+    novoSalario = salarioAtual + tarifa3;;
+    alert(`O salário atual será igual a ${novoSalario}`);
+}
+else 
+{
+    salarioAtual 
+    alert (`O salário atual será igual a ${salarioAtual}`);
+}
+
+</script>

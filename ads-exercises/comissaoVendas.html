@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<meta charset = "UTF-8">
+<script>
+var tipo = prompt("Digite (E) para Estagiario e (V) para Vendedor: " );
+
+if(tipo == "V"){
+    var vendas = parseFloat(prompt("Digite seu valor total de vendas: "))
+    var comissao = vendas * (10/100);
+    var salarioV = 600 + comissao;
+    document.write("O salario do vendedor é: " + salarioV);
+    
+}else if(tipo == "E"){
+    var dias = parseInt(prompt("Quantos dias foram trabalhados?"));
+    var salarioE = dias * 30;
+    document.write("O salario do estagiario é: " + salarioE);
+}
+
+</script>
