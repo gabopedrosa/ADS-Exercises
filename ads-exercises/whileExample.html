@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<body>
+    <!--------- Fazer um programa que leia várias notas até que seja 
+    lançada uma nota nula. O programa deve garantir que as
+    notas lidas sejam válidas, ou seja, entre 0 e 10. O programa
+    deve apresentar a média das notas lidas. !------>
+</body>
+<script>
+    var notas, soma, qtde;
+        soma = 0;
+        qtde = 0;
+        nota = parseFloat(prompt('Informe uma nota :'));
+        
+            while ( nota != 0 ) {
+                soma = soma + notas;
+                qtde++;
+                nota = parseFloat(prompt('Informe uma nota:'));
+            }
+    document.write(`Média das notas = ${soma/qtde.toFixed(1)}`);
+</script>
